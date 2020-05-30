@@ -1,7 +1,7 @@
 let hubUrl = 'http://84.201.131.165/chat'; //ссылка, по которому будем обращаться к хабу
-let connection = new signalR.HubConnectionBuilder()  //строим соединение с хабом
-    .withUrl(hubUrl)                      // в нашем случае будет использована технология web-socket
-    .build();
+//let connection = new signalR.HubConnectionBuilder()  //строим соединение с хабом
+  //  .withUrl(hubUrl)                      // в нашем случае будет использована технология web-socket
+    //.build();
 
 //здесь мы задаем функцию, в которую будет отправлять новые данные хаб
 connection.on('Send', function (name, message) {//первый параметр дублирует имя в методе отсылки хаба
