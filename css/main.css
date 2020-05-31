@@ -404,7 +404,7 @@ ul.sub-menu {
     position: inherit;
 }
 
-.video-gallery a img {
+img  {
     height: 100%;
     width: 100%;
 }
